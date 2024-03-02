@@ -222,23 +222,4 @@ func closeMonitor(ctx context.Context) {
 	log.Fatal("sing-box did not close!")
 }
 
-func MergeOptions(source option.Options, destination option.Options) (option.Options, error) {
-	rawSource, err := json.Marshal(source)
-	if err != nil {
-		return option.Options{}, E.Cause(err, "marshal source")
-	}
-	rawDestination, err := json.Marshal(destination)
-	if err != nil {
-		return option.Options{}, E.Cause(err, "marshal destination")
-	}
-	rawMerged, err := badjson.MergeJSON(rawSource, rawDestination)
-	if err != nil {
-		return option.Options{}, E.Cause(err, "merge options")
-	}
-	var merged option.Options
-	err = json.Unmarshal(rawMerged, &merged)
-	if err != nil {
-		return option.Options{}, E.Cause(err, "unmarshal merged options")
-	}
-	return merged, nil
-}
+

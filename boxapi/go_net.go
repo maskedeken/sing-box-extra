@@ -17,7 +17,10 @@ func DialContext(ctx context.Context, box *boxbox.Box, network, addr string) (ne
 	}
 	if vs := router.V2RayServer(); vs != nil {
 		if ss, ok := vs.StatsService().(*SbStatsService); ok {
-			outbound, _ := router.DefaultOutbound(N.NetworkName(network))
+			outbound, err := router.DefaultOutbound(N.NetworkName(network))
+			if err != nil {
+				return nil, err
+			}
 			conn = ss.RoutedConnectionInternal("", outbound.Tag(), "", conn, false)
 		}
 	}
