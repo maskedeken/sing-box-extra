@@ -7,13 +7,13 @@ require (
 	github.com/gofrs/uuid/v5 v5.0.0
 	github.com/matsuridayo/libneko v1.0.0 // replaced
 	github.com/miekg/dns v1.1.58 // indirect
-	github.com/sagernet/sing v0.3.2
+	github.com/sagernet/sing v0.3.8
 	github.com/sagernet/sing-box v1.0.0 // replaced
-	github.com/sagernet/sing-dns v0.1.12
-	github.com/sagernet/sing-tun v0.2.3
+	github.com/sagernet/sing-dns v0.1.14
+	github.com/sagernet/sing-tun v0.2.6
 	github.com/spf13/cobra v1.8.0
-	golang.org/x/sys v0.17.0
-	golang.org/x/tools v0.17.0 // indirect
+	golang.org/x/sys v0.19.0
+	golang.org/x/tools v0.19.0 // indirect
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20230429144221-925a1e7659e6
 )
 
@@ -33,7 +33,6 @@ require (
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
 	github.com/gobwas/httphead v0.1.0 // indirect
 	github.com/gobwas/pool v0.2.1 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/btree v1.1.2 // indirect
 	github.com/google/pprof v0.0.0-20231101202521-4ca4178f5c7a // indirect
 	github.com/hashicorp/yamux v0.1.1 // indirect
@@ -43,8 +42,8 @@ require (
 	github.com/klauspost/compress v1.17.4 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/libdns/alidns v1.0.3 // indirect
-	github.com/libdns/cloudflare v0.1.0 // indirect
-	github.com/libdns/libdns v0.2.1 // indirect
+	github.com/libdns/cloudflare v0.1.1 // indirect
+	github.com/libdns/libdns v0.2.2 // indirect
 	github.com/logrusorgru/aurora v2.0.3+incompatible // indirect
 	github.com/mholt/acmez v1.2.0 // indirect
 	github.com/onsi/ginkgo/v2 v2.9.7 // indirect
@@ -56,7 +55,7 @@ require (
 	github.com/sagernet/cloudflare-tls v0.0.0-20231208171750-a4483c1b7cd1 // indirect
 	github.com/sagernet/gvisor v0.0.0-20231209105102-8d27a30e436e // indirect
 	github.com/sagernet/netlink v0.0.0-20220905062125-8043b4a9aa97 // indirect
-	github.com/sagernet/quic-go v0.41.0-beta.2 // indirect
+	github.com/sagernet/quic-go v0.40.1 // indirect
 	github.com/sagernet/reality v0.0.0-20230406110435-ee17307e7691 // indirect
 	github.com/sagernet/sing-mux v0.2.0 // indirect
 	github.com/sagernet/sing-quic v1.0.0 // indirect
@@ -69,7 +68,6 @@ require (
 	github.com/sagernet/utls v1.5.4 // indirect
 	github.com/sagernet/wireguard-go v0.0.0-20231215174105-89dec3b2f3e8 // indirect
 	github.com/sagernet/ws v0.0.0-20231204124109-acfe8907c854 // indirect
-	github.com/scjalliance/comshim v0.0.0-20230315213746-5e51f40bd3b9 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/u-root/uio v0.0.0-20230220225925-ffce2a382923 // indirect
 	github.com/vishvananda/netns v0.0.0-20211101163701-50045581ed74 // indirect
@@ -77,23 +75,23 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
-	golang.org/x/crypto v0.19.0 // indirect
-	golang.org/x/exp v0.0.0-20240205201215-2c58cdc269a3 // indirect
-	golang.org/x/mod v0.14.0 // indirect
-	golang.org/x/net v0.21.0 // indirect
+	golang.org/x/crypto v0.22.0 // indirect
+	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8 // indirect
+	golang.org/x/mod v0.16.0 // indirect
+	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80 // indirect
-	google.golang.org/grpc v1.62.0 // indirect
-	google.golang.org/protobuf v1.32.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240227224415-6ceb2ff114de // indirect
+	google.golang.org/grpc v1.63.0 // indirect
+	google.golang.org/protobuf v1.33.0 // indirect
 	lukechampine.com/blake3 v1.2.1 // indirect
 )
 
 replace github.com/matsuridayo/libneko => github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889
 
-replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240301132409-b6a0fb0e58da
+replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240410021252-557ed6eb3ff6
 
-replace github.com/sagernet/sing-quic => github.com/maskedeken/sing-quic v0.0.0-20240302084357-d1585a3b36f1
+replace github.com/sagernet/sing-quic => github.com/maskedeken/sing-quic v0.0.0-20240410012736-59b731912aea
 
 // replace github.com/sagernet/sing-dns v1.0.0 => ../sing-dns
 
