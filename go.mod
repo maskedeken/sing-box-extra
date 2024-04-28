@@ -4,16 +4,16 @@ go 1.19
 
 require (
 	github.com/dustin/go-humanize v1.0.1
-	github.com/gofrs/uuid/v5 v5.0.0
+	github.com/gofrs/uuid/v5 v5.1.0
 	github.com/matsuridayo/libneko v1.0.0 // replaced
-	github.com/miekg/dns v1.1.58 // indirect
+	github.com/miekg/dns v1.1.59 // indirect
 	github.com/sagernet/sing v0.3.8
 	github.com/sagernet/sing-box v1.0.0 // replaced
 	github.com/sagernet/sing-dns v0.1.14
 	github.com/sagernet/sing-tun v0.2.6
 	github.com/spf13/cobra v1.8.0
 	golang.org/x/sys v0.19.0
-	golang.org/x/tools v0.19.0 // indirect
+	golang.org/x/tools v0.20.0 // indirect
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20230429144221-925a1e7659e6
 )
 
@@ -76,22 +76,23 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
 	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8 // indirect
-	golang.org/x/mod v0.16.0 // indirect
+	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // indirect
+	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/net v0.24.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240227224415-6ceb2ff114de // indirect
-	google.golang.org/grpc v1.63.0 // indirect
+	google.golang.org/grpc v1.63.2 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	lukechampine.com/blake3 v1.2.1 // indirect
 )
 
 replace github.com/matsuridayo/libneko => github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889
 
-replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240410021252-557ed6eb3ff6
+replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240428044855-6359d981295d
 
-replace github.com/sagernet/sing-quic => github.com/maskedeken/sing-quic v0.0.0-20240410012736-59b731912aea
+replace github.com/sagernet/sing-quic => github.com/maskedeken/sing-quic v0.0.0-20240428044635-99c39bf7adf9
 
 // replace github.com/sagernet/sing-dns v1.0.0 => ../sing-dns
 
