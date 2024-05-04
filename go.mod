@@ -10,7 +10,7 @@ require (
 	github.com/sagernet/sing v0.3.8
 	github.com/sagernet/sing-box v1.0.0 // replaced
 	github.com/sagernet/sing-dns v0.1.14
-	github.com/sagernet/sing-tun v0.2.6
+	github.com/sagernet/sing-tun v0.2.7
 	github.com/spf13/cobra v1.8.0
 	golang.org/x/sys v0.19.0
 	golang.org/x/tools v0.20.0 // indirect
@@ -90,7 +90,7 @@ require (
 
 replace github.com/matsuridayo/libneko => github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889
 
-replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240428044855-6359d981295d
+replace github.com/sagernet/sing-box => github.com/maskedeken/sing-box v0.0.0-20240504030512-ca3163f32a55
 
 replace github.com/sagernet/sing-quic => github.com/maskedeken/sing-quic v0.0.0-20240428044635-99c39bf7adf9
 
