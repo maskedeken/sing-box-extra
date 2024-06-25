@@ -281,7 +281,7 @@ func (s *Box) postStart() error {
 			}
 		}
 	}
-	return nil
+	return s.router.PostStart()
 }
 
 func (s *Box) Close() error {
